@@ -1,0 +1,97 @@
+body{
+    background-color: aliceblue;
+    margin: 0px;
+}
+
+h1{
+    color: orange;
+    text-align: center;
+}
+
+p{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+
+.AboutContent{
+    margin: auto;
+    max-width: 500px;
+}
+
+/* horizontal bar*/
+.icon-bar {
+    width: 100%; /* Full-width */
+    background-color: #555; /* Dark-grey background */
+    overflow: auto; /*over flow due to float*/
+}
+
+.icon-bar a {
+    float: left; /* float links side by side */
+    text-align: center; /* center align text */
+    width: 20%; /* equal width (5 icons with 20% width each == 100%) */
+    padding: 12px 0; /* some top and bottom padding */
+    transition: all 0.3s ease; /* add transition for hover effects */
+    color: white; /* white text color */
+    font-size: 36px; /* Increased font size */
+}
+
+.icon-bar a:hover {
+    background-color: #000; /* Add a hover color */
+}
+
+.active {
+    background-color: #4CAF50; /* Add an active/current color */
+}
+
+.homeImages{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+}
+
+a{
+    text-align: center;
+}
+
+.linkCentre{
+    text-align: center;
+}
+
+/* the modal (background) */
+.modal {
+    display: none; /* hidden by defualt */
+    position: fixed; /* stay in place */
+    z-index: 1; /* sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* full width */
+    height: 100%; /*full height */
+    overflow: auto; /*enable scroll if needed */
+    background-color: rgb(0,0,0); /*fallback color */
+    background-color: rgba(0,0,0,0.4); /*black w/ opacity */
+}
+
+/* modal content/box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* could be more or less, depending on screen size */
+}
+
+/* the close button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}

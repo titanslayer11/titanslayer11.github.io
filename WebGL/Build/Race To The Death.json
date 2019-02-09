@@ -1,0 +1,13 @@
+{
+"companyName": "DefaultCompany",
+"productName": "Race To The Death",
+"dataUrl": "Race To The Death.data.unityweb",
+"asmCodeUrl": "Race To The Death.asm.code.unityweb",
+"asmMemoryUrl": "Race To The Death.asm.memory.unityweb",
+"asmFrameworkUrl": "Race To The Death.asm.framework.unityweb",
+"TOTAL_MEMORY": 268435456,
+"graphicsAPI": ["WebGL 2.0", "WebGL 1.0"],
+"webglContextAttributes": {"preserveDrawingBuffer": false},
+"splashScreenStyle": "Dark",
+"backgroundColor": "#231F20"
+}
