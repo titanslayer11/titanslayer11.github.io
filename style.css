@@ -18,36 +18,51 @@ p{
     max-width: 500px;
 }
 
-/* horizontal bar*/
-.icon-bar {
-    width: 100%; /* Full-width */
-    background-color: #555; /* Dark-grey background */
-    overflow: auto; /*over flow due to float*/
-}
-
-.icon-bar a {
-    float: left; /* float links side by side */
-    text-align: center; /* center align text */
-    width: 20%; /* equal width (5 icons with 20% width each == 100%) */
-    padding: 12px 0; /* some top and bottom padding */
-    transition: all 0.3s ease; /* add transition for hover effects */
-    color: white; /* white text color */
-    font-size: 36px; /* Increased font size */
-}
-
-.icon-bar a:hover {
-    background-color: #000; /* Add a hover color */
-}
-
-.active {
-    background-color: #4CAF50; /* Add an active/current color */
-}
-
 .homeImages{
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 20%;
+}
+
+.SideNavigation {
+    width: 130px;
+    position: fixed;
+    z-index: 1;
+    top: 20px;
+    left: 10px;
+    background: #eee;
+    overflow-x: hidden;
+    padding: 8px 0;
+}
+
+.SideNavigation a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #2196F3;
+    display: block;
+}
+  
+.SideNavigation a:hover {
+    color: #064579;
+}
+
+.main {
+    margin-left: 140px; /* Same width as the sidebar + left position in px */
+    font-size: 28px; /* Increased text to enable scrolling */
+    padding: 0px 10px;
+}
+
+@media screen and (max-height: 450px) {
+    .SideNavigation {padding-top: 15px;}
+    .SideNavigation a {font-size: 18px;}
+}
+
+.Content{
+    margin: auto;
+    max-width: 170px;
+    align-self: center;
 }
 
 a{
